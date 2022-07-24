@@ -1,0 +1,164 @@
+:root {
+  --color--primary: #fefefe;
+  --color--primary-black: #000;
+  --color--primary-red: #d04707;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--color--primary);
+}
+.container {
+  width: 100%;
+}
+.nav {
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.textReklama {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.firmaNomi {
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+}
+.formSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+}
+.searchInput {
+  width: 35%;
+  height: 8rem;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  border-radius: 3rem 0 0 3rem;
+  font-size: 3rem;
+  border: none;
+  outline: 3px solid var(--color--primary-red);
+  color: var(--color--primary-red);
+}
+.searchInput::placeholder {
+  color: var(--color--primary-red);
+}
+.searchBtn {
+  width: 5%;
+  height: 8.55rem;
+  margin-left: -0.5rem;
+  box-sizing: border-box;
+  background-color: var(--color--primary-red);
+  border: none;
+  border-radius: 0rem 3rem 3rem 0rem;
+}
+.searchBtn:active {
+  background-color: #ff5100;
+}
+.searchBtnImg {
+  transform: scale(1.3);
+}
+.errorMeal {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color--primary-red);
+}
+/* section hero finished */
+/* card meal style started */
+.section__Meal {
+  width: 90%;
+  margin: 2rem auto;
+  margin-top: -5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+.meal {
+  width: 93%;
+  background-color: white;
+  margin: 2rem;
+  box-sizing: border-box;
+  border-radius: 3rem;
+  box-shadow: 0 0.1rem 1rem 0.5rem rgb(188, 188, 188);
+}
+.mealName {
+  font-size: 4rem;
+  text-align: center;
+}
+.mealMore {
+  width: 20rem;
+  display: block;
+  height: 5rem;
+  font-size: 3rem;
+  background-color: var(--color--primary-red);
+  border: none;
+  color: var(--color--primary);
+  border-radius: 1rem;
+  margin: 2rem auto;
+}
+.mealMore:active {
+  transform: scale(1.05);
+}
+.mealImg {
+  width: 100%;
+  border-radius: 3rem 3rem 0 0;
+}
+.recipe {
+  width: 60%;
+  padding: 3rem;
+  height: 80vh;
+  background-color: var(--color--primary-red);
+  font-size: 3rem;
+  color: white;
+  margin: 10rem auto;
+  text-align: center;
+  transition: all 2s;
+  display: none;
+  position: absolute;
+  border-radius: 2rem;
+  top: -8rem;
+  left: 20%;
+  position: fixed;
+  overflow-y: scroll;
+}
+.close-recipe {
+  margin-left: 95%;
+  font-size: 4rem;
+  background-color: #fefefe00;
+  border: none;
+  padding: 2rem;
+  color: white;
+}
+.close-recipe:active {
+  transform: scale(1.05);
+}
+.recipe-name {
+  font-size: 7rem;
+  text-align: center;
+}
+.recipe-category {
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  color: #d04707;
+  width: 11rem;
+  border-radius: 1rem;
+  margin: 3rem auto;
+}
+.text {
+  margin: 3rem auto;
+  font-size: 5rem;
+}
